@@ -16,3 +16,4 @@ ggplot() +
   geom_line(data = king_county, aes(x = year, y = native_jail_pop_rate, color = "Native")) +
   geom_line(data = king_county, aes(x = year, y = white_jail_pop_rate, color = "White")) +
   theme(axis.text.x = element_text(size = 5))
+

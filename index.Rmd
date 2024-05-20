@@ -57,13 +57,7 @@ This chart shows the jail population rates of various racial groups in King Coun
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
+This chart is a variable comparison of the white jail population rates to the black jail population rates from 1990 - 2018 in King County. This chart was included in order to determine if there's any correlation between the incarceration of black people vs white people in King County over the years to uncover any racial disparities between POC and white people being incarcerated, but there appears to not be a clear relationship. The correlation coefficient of 0.01726 is not very strong so it cannot be said whether the incarceration of black people had an effect on white people and vice versa.
 
 ``````{r, echo = FALSE, code = readLines("chart2_example.R")}
 ```
