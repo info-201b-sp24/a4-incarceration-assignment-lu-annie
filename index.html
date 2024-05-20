@@ -188,8 +188,17 @@ pre code {
 <p>Why was the data collected?</p>
 <p>The data was collected in order to bring about ending mass incarceration and searching for solutions to do that. The Vera Institute wants to transform the justice system and they can do so by studying prison populations and demographics of who is in prison to determine if there's bias towards particular groups of people.</p>
 <p>How many observations (rows) are in your data?</p>
+<pre class="r"><code>wa_data &lt;- read.csv(&quot;/Users/annielu/Desktop/info201 hw/a4-incarceration-assignment-lu-annie/raw.githubusercontent.com_melaniewalsh_Neat-Datasets_main_us-prison-jail-rates-1990-WA.csv&quot;)
+
+print(nrow(wa_data))</code></pre>
+<pre><code>## [1] 1131</code></pre>
+<p>1131 rows</p>
 <p>How many features (columns) are in the data?</p>
+<pre class="r"><code>print(ncol(wa_data))</code></pre>
+<pre><code>## [1] 23</code></pre>
+<p>23 columns</p>
 <p>What, if any, ethical questions or questions of power do you need to consider when working with this data?</p>
+<p>The ethical concerns with this data are that since this data was gathered by the Vera Institute from various sources, it is unknown if there is under-reporting or over-reporting of poeple who are actually in prisons during specific times. This can cause issues as it may not accurately represent number of POC in prisons which is what our analysis is trying to cover.</p>
 <p>What are possible limitations or problems with this data? (at least 200 words)</p>
 <p>This data only has the races of people who are in prison in WA state, and it's a small amount of data compared to the entire set. The data also does not have the reasonings behind why prisoners are in prison.</p>
 </div>

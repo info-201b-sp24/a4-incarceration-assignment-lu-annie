@@ -35,15 +35,25 @@ The data was collected in order to bring about ending mass incarceration and sea
 
 How many observations (rows) are in your data?  
 
+```{r}
+wa_data <- read.csv("/Users/annielu/Desktop/info201 hw/a4-incarceration-assignment-lu-annie/raw.githubusercontent.com_melaniewalsh_Neat-Datasets_main_us-prison-jail-rates-1990-WA.csv")
 
+print(nrow(wa_data))
+```
+
+1131 rows
 
 How many features (columns) are in the data? 
 
+```{r}
+print(ncol(wa_data))
+```
 
+23 columns
 
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
 
-
+The ethical concerns with this data are that since this data was gathered by the Vera Institute from various sources, it is unknown if there is under-reporting or over-reporting of poeple who are actually in prisons during specific times. This can cause issues as it may not accurately represent number of POC in prisons which is what our analysis is trying to cover.
 
 What are possible limitations or problems with this data?   (at least 200 words)
 
