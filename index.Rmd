@@ -1,5 +1,5 @@
 ---
-title: "A3: Incarceration"
+title: "A5: Incarceration"
 output: html_document
 ---
 
@@ -17,15 +17,10 @@ The variables this report will analyze will be:
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+Some information found on the dataset can be seen by the summary statistics as shown below. The first summary stat finds the county with the highest jail population rate. It is Yakima County at a jail pop rate of 992.82. The county with the lowest jail population rate is Whitman County at 81.31 prisoners. The highest number of recorded POC prisoners was 8215.3 and the county with the highest number of POC prisoners is Adams County with 4255 prisoners. The year with the highest prisoners was 2009 where Yakima county had a total jail pop rate of 922.82.
 
-These will likely be calculated using your DPLYR skills, answering questions such as: 
-
-- What is the average value of my variable across all the counties (in the current year)?
-- Where is my variable the highest / lowest?
-- How much has my variable change over the last N years?
-
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
+``````{r, echo = FALSE, code = readLines("summary.R")}
+```
 
 ### The Dataset
 
@@ -36,8 +31,6 @@ The data was collected in various ways by the Vera Institute. Some ways are from
 The data was collected in order to bring about ending mass incarceration and searching for solutions to do that. The Vera Institute wants to transform the justice system and they can do so by studying prison populations and demographics of who is in prison to determine if there's bias towards particular groups of people.
 
 ```{r}
-wa_data <- read.csv("/Users/annielu/Desktop/info201 hw/a4-incarceration-assignment-lu-annie/raw.githubusercontent.com_melaniewalsh_Neat-Datasets_main_us-prison-jail-rates-1990-WA.csv")
-
 print(nrow(wa_data))
 ```
 
@@ -69,8 +62,6 @@ The first chart that you will create and include will show the trend over time o
 
 When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
 
-Here's an example of how to run an R script inside an RMarkdown file:
-
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
 
@@ -84,6 +75,9 @@ The second chart that you will create and include will show how two different (c
 - The chart needs a clear title 
 - If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
 
+``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+```
+
 ### Map
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
@@ -93,4 +87,7 @@ The last chart that you will create and include will show how a variable is dist
 - Your map needs a title
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
+
+``````{r, echo = FALSE, code = readLines("map_example.R")}
+```
 
