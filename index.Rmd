@@ -5,7 +5,15 @@ output: html_document
 
 ### Introduction
 
-An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
+The US prison system has many issues, with one of the most important ones being the over-incarceration of POC. The Vera Institute of technology, from where this data is derived from, aims to fight this over-incarceration and bring justice to the people from the unfair prison system altogether.
+
+The variables this report will analyze will be:
+
+(1) the change in races and sexes of prisoners in all counties over time in order to see how the race and sex compositions of prisoners over WA state have changed over time
+
+(2) the relationship between rurality of a county and the race composition of prisoners in that county to determine if there's a correlation between rural counties and prisoner compositions
+
+(3) the distribution of race and sexes of prisoners in a county on a map for the most recent date to see a clearer concentration of what compositions of prisoners are in each county today and whether there is still inequality
 
 ### Summary Information
 
@@ -21,19 +29,11 @@ Feel free to calculate and report values that you find relevant. Again, remember
 
 ### The Dataset
 
-Who collected the data?  
-
 The data was collected by the Vera Institute of Justice.
-
-How was the data collected or generated?  
 
 The data was collected in various ways by the Vera Institute. Some ways are from the government and government agencies, criminal settings such as jails and courtrooms, city/town halls. This Washington dataset may have been retrieved using data from the WA state government and similar areas.
 
-Why was the data collected? 
-
 The data was collected in order to bring about ending mass incarceration and searching for solutions to do that. The Vera Institute wants to transform the justice system and they can do so by studying prison populations and demographics of who is in prison to determine if there's bias towards particular groups of people.
-
-How many observations (rows) are in your data?  
 
 ```{r}
 wa_data <- read.csv("/Users/annielu/Desktop/info201 hw/a4-incarceration-assignment-lu-annie/raw.githubusercontent.com_melaniewalsh_Neat-Datasets_main_us-prison-jail-rates-1990-WA.csv")
@@ -41,7 +41,7 @@ wa_data <- read.csv("/Users/annielu/Desktop/info201 hw/a4-incarceration-assignme
 print(nrow(wa_data))
 ```
 
-1131 rows
+There are 1131 rows in this dataset.
 
 How many features (columns) are in the data? 
 
@@ -49,17 +49,11 @@ How many features (columns) are in the data?
 print(ncol(wa_data))
 ```
 
-23 columns
-
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+There are 23 columns in this dataset.
 
 The ethical concerns with this data are that since this data was gathered by the Vera Institute from various sources, it is unknown if there is under-reporting or over-reporting of poeple who are actually in prisons during specific times. This can cause issues as it may not accurately represent number of POC in prisons which is what our analysis is trying to cover.
 
-What are possible limitations or problems with this data?   (at least 200 words)
-
-This data only has the races of people who are in prison in WA state, and it's a small amount of data compared to the entire set. The data also does not have the reasonings behind why prisoners are in prison.
-
-
+The limitations are that this data only has the races of people who are in prison in WA state, and it's a small amount of data compared to the entire set. The data also does not have the reasonings behind why prisoners are in prison. We won't be able to know the severity of crimes and peoples' sentences in prison, which may or may not play a role in determining why the demographics of prisoners is the way it is. So essentially, the dataset is generalized and we do not know the specifics. It also has a lot of N/A columns for population of specific races in prisons. This further adds to the issues and questions of how accurate the demographics are. It also only sorts the races into male and female, aapi, black, latinx, native, and white, so we have to consider that while the races and sexes are generally accounted for, it is unsure how people who are a mix of these may be represented in this data. Some counties will smaller populations may also not have enough representation compared to counties with larger populations. Also, if we are looking at this for only Washington state, it raises a lot of questions for how the data will be represented in other states' datasets too.
 
 ### Trends Over Time Chart
 
