@@ -50,17 +50,7 @@ The limitations are that this data only has the races of people who are in priso
 
 ### Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
+This chart shows the jail population rates of various racial groups in King County jails from the year 1990 to 2018. This chart was included in order to research any over-incarceration of races in King County and whether or not that has changed over time. The results are really interesting, as it shows black people were over-incarcerated in the 1990s, but that has steadily decrease over time to 2018, showing that while they are still over-incarcerated, the amount of black people in prison has decreased overall. Latinx people had a spike in incarcerations in 1997 but that has also decreased. Overall though, POC have higher rates of incarceration than white people.
 
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
