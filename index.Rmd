@@ -27,11 +27,11 @@ The data was collected by the Vera Institute of Justice.
 
 How was the data collected or generated?  
 
-The data was 
+The data was collected in various ways by the Vera Institute. Some ways are from the government and government agencies, criminal settings such as jails and courtrooms, city/town halls. This Washington dataset may have been retrieved using data from the WA state government and similar areas.
 
 Why was the data collected? 
 
-The data was collected in order to...
+The data was collected in order to bring about ending mass incarceration and searching for solutions to do that. The Vera Institute wants to transform the justice system and they can do so by studying prison populations and demographics of who is in prison to determine if there's bias towards particular groups of people.
 
 How many observations (rows) are in your data?  
 
@@ -47,7 +47,7 @@ What, if any, ethical questions or questions of power do you need to consider wh
 
 What are possible limitations or problems with this data?   (at least 200 words)
 
-
+This data only has the races of people who are in prison in WA state, and it's a small amount of data compared to the entire set. The data also does not have the reasonings behind why prisoners are in prison.
 
 
 
