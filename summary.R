@@ -1,5 +1,7 @@
 library(dplyr)
 
+# read data
+
 wa_data <- read.csv("/Users/annielu/Desktop/info201 hw/a4-incarceration-assignment-lu-annie/raw.githubusercontent.com_melaniewalsh_Neat-Datasets_main_us-prison-jail-rates-1990-WA.csv")
 
 summary_info <- list()

@@ -1,10 +1,12 @@
 library(dplyr)
 library(ggplot2)
 
-# king county chart with trends between white and black population rates
+# calculate correlation
 
 correlation_coefficient <- cor(king_county$white_jail_pop_rate, king_county$black_jail_pop_rate)
 print(correlation_coefficient)
+
+# plot king county chart with trends between white and black population rates
 
 ggplot(king_county, aes(x = white_jail_pop_rate, y = black_jail_pop_rate)) +
   geom_point() +

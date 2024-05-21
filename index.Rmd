@@ -9,11 +9,11 @@ The US prison system has many issues, with one of the most important ones being 
 
 The variables this report will analyze will be:
 
-(1) the change in races and sexes of prisoners in all counties over time in order to see how the race and sex compositions of prisoners over WA state have changed over time
+(1) the change in number of prisoners for all races in WA over time in order to see how the race compositions of prisoners over WA state have changed over time
 
-(2) the relationship between rurality of a county and the race composition of prisoners in that county to determine if there's a correlation between rural counties and prisoner compositions
+(2) the relationship between the white jail population rates compared to the black jail populations rates to determine if there's a correlation between white people being incarcerated vs POC being incarcerated
 
-(3) the distribution of race and sexes of prisoners in a county on a map for the most recent date to see a clearer concentration of what compositions of prisoners are in each county today and whether there is still inequality
+(3) the distribution of race of prisoners in a county on a map to see a clearer concentration of what compositions of prisoners are in each county today and whether there is still inequality
 
 ### Summary Information
 
@@ -64,13 +64,7 @@ This chart is a variable comparison of the white jail population rates to the bl
 
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
+This chart is a set of maps showing the jail population rates of various races in counties in WA state. They are denoted by a legend where the lighter blue shows a higher amount of people of that race are in jail, and this is a sum of all people in jail from 1990 to 2018. This chart was included to determine which counties are more prone to overincarcerating POC, and how the composition of people in jail varies by county. Based off the numbers and colors, the patterns show that there is a greater amount of POC in jail in WA state counties (over 1000) compared to white people (mostly under 1000 in counties), so there may be some evidence of over-incarceration of POC.
 
 ``````{r, echo = FALSE, code = readLines("map_example.R")}
 ```

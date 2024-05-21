@@ -1,10 +1,13 @@
 library(dplyr)
 library(ggplot2)
 
+# filter to king county
+
 king_county <- wa_data %>%
   filter(county_name == "King County")
 
-# king county chart with trends over time of jail population
+# king county chart with trends over time of jail population, plots each race
+
 ggplot() +
   labs(title = "Jail Population Rates in King County From 1990 - 2018",
        x = "Year",
